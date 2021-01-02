@@ -1,9 +1,4 @@
-import { Application } from 'express'
-
+import { app } from '../server';
 import hello from './controllers/hello';
 
-export default (app: Application) => {
-    
-    app.use('/', hello);
-
-}
+app.use('/', hello);
